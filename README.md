@@ -5,7 +5,9 @@ A repository for reproducing [LoopBack community issues][wiki-issues].
 To run this testcase in the Explorer run:
 
    Model1/init
+
    Model2/init
+
    Model1/runQuery
 
 There are two files present... bad.output which exhibits the problem and
