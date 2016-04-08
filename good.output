@@ -1,0 +1,76 @@
+Web server listening at: http://edagl10ch.pok.ibm.com:3000
+Browse your REST API at http://edagl10ch.pok.ibm.com:3000/explorer
+Here is the console.log on the raw result:
+[ { description: 'description1',
+    catalog: 'catalog1',
+    name: 'MyFirstModel1',
+    model2s: [ [Object], [Object], [Object] ] },
+  { description: 'description2',
+    catalog: 'catalog2',
+    name: 'MySecondModel1',
+    model2s: [ [Object], [Object] ] },
+  { description: 'description3',
+    catalog: 'catalog3',
+    name: 'MyThirdModel1',
+    model2s: [] } ]
+
+Here is the console.log on the stringified result:
+[{"description":"description1","catalog":"catalog1","name":"MyFirstModel1","model2s":[{"name":"model2_instance3","test2":"pqr","test1":"MyFirstModel1"},{"name":"model2_instance4","test2":"tuv","test1":"MyFirstModel1"},{"name":"model2_instance5","test2":"wxy","test1":"MyFirstModel1"}]},{"description":"description2","catalog":"catalog2","name":"MySecondModel1","model2s":[{"name":"model2_instance1","test2":"abc","test1":"MySecondModel1"},{"name":"model2_instance2","test2":"ghi","test1":"MySecondModel1"}]},{"description":"description3","catalog":"catalog3","name":"MyThirdModel1","model2s":[]}]
+
+Here is result[0]:
+{ description: 'description1',
+  catalog: 'catalog1',
+  name: 'MyFirstModel1',
+  model2s: 
+   [ { name: 'model2_instance3',
+       test2: 'pqr',
+       test1: 'MyFirstModel1' },
+     { name: 'model2_instance4',
+       test2: 'tuv',
+       test1: 'MyFirstModel1' },
+     { name: 'model2_instance5',
+       test2: 'wxy',
+       test1: 'MyFirstModel1' } ] }
+
+Here is result[0].model2s[0]:
+{ name: 'model2_instance3',
+  test2: 'pqr',
+  test1: 'MyFirstModel1' }
+
+Here is result[0].model2s[1]:
+{ name: 'model2_instance4',
+  test2: 'tuv',
+  test1: 'MyFirstModel1' }
+
+Here is result[0].model2s[2]:
+{ name: 'model2_instance5',
+  test2: 'wxy',
+  test1: 'MyFirstModel1' }
+
+Here is result[1]:
+{ description: 'description2',
+  catalog: 'catalog2',
+  name: 'MySecondModel1',
+  model2s: 
+   [ { name: 'model2_instance1',
+       test2: 'abc',
+       test1: 'MySecondModel1' },
+     { name: 'model2_instance2',
+       test2: 'ghi',
+       test1: 'MySecondModel1' } ] }
+
+Here is result[1].model2s[0]:
+{ name: 'model2_instance1',
+  test2: 'abc',
+  test1: 'MySecondModel1' }
+
+Here is result[1].model2s[1]:
+{ name: 'model2_instance2',
+  test2: 'ghi',
+  test1: 'MySecondModel1' }
+
+Here is result[2]:
+{ description: 'description3',
+  catalog: 'catalog3',
+  name: 'MyThirdModel1',
+  model2s: [] }
